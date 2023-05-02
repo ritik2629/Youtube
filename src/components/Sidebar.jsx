@@ -14,7 +14,8 @@ const Sidebar = () => {
 
   if (!state) return null; //early return
   return (
-    <div className=" p-2 w-52">
+    // <div className=" p-2 w-52 fixed inset-0 bg-white mt-20">
+     <div className=" p-2 w-52"> 
       <Link to='/'>
       <div className=" flex items-center gap-3 mb-3 text-lg hover:cursor-pointer hover:bg-gray-100 hover:rounded-lg p-2">
         <AiFillHome />

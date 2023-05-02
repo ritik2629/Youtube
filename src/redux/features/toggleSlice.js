@@ -2,7 +2,6 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState={
     isMenuOpen:true,
-    count:0
 }
 
 const toggleSlice=createSlice({

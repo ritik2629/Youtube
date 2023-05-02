@@ -3,11 +3,17 @@ import Body from "./components/Body";
 import Header from "./components/Header";
 import Watch from "./pages/Watch";
 import MainContainer from "./components/MainContainer";
+import Result from "./components/Result";
+import Filter from "./pages/Filter";
 
 const appRouter = createBrowserRouter([
   {
     path: "/",
-    element: <Body />,
+    element:
+    <>
+    <Header/>
+    <Body />
+    </>,
     children:[
       {
         path:'/',
@@ -17,6 +23,14 @@ const appRouter = createBrowserRouter([
         path: "/watch",
         element: <Watch />,
       },
+      {
+        path: "/result",
+        element: <Result />,
+      },
+      {
+        path: "/filter",
+        element: <Filter />,
+      },
     ]
   }
 ]);
@@ -24,7 +38,7 @@ const appRouter = createBrowserRouter([
 const App = () => {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <RouterProvider router={appRouter} />
     </div>
   );
